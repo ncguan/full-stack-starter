@@ -1,6 +1,8 @@
 import { Helmet } from 'react-helmet-async';
 import { useStaticContext } from './StaticContext';
 
+import Item from './Item';
+
 function Home() {
   const staticContext = useStaticContext();
   return (
@@ -10,6 +12,8 @@ function Home() {
       </Helmet>
       <main className="container">
         <h1>Home</h1>
+        <Item title="test 1"/>
+        <Item title="test 2"/>
       </main>
     </>
   );
