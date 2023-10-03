@@ -19,4 +19,16 @@ body {
 
 .carousel-item:hover .carousel-caption{
   display: block;
+  text-decoration: none;
+}
+
+.carousel-caption p{
+  font-size: 2em;
+  background-color: #8D8741;
+  color: #DAAD86;
+}
+
+.carousel-caption p:hover{
+  background: radial-gradient(#9a9347 30%, #8D8741 70%);
+  color: #FBEEC1;
 }
