@@ -8,7 +8,15 @@ body {
   top: 35%;
 }
 
-.carousel-item img:hover {
+.carousel-item:hover img {
   transition: 0.3s;
   filter: blur(0.5rem);
+}
+
+.carousel-item .carousel-caption {
+  display:none;
+}
+
+.carousel-item:hover .carousel-caption{
+  display: block;
 }

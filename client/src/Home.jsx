@@ -11,7 +11,7 @@ function Home() {
         <title>Home - {staticContext?.env?.VITE_SITE_TITLE ?? ''}</title>
       </Helmet>
       <main className="container">
-        <h1>Home</h1>
+        <h1 className="text-center">San Francisco Animal Rescues and Shelters</h1>
         <div className="row">
         <Item title="test 1"/>
         <Item title="test 2"/>
