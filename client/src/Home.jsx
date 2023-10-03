@@ -12,8 +12,14 @@ function Home() {
       </Helmet>
       <main className="container">
         <h1>Home</h1>
+        <div className="row">
         <Item title="test 1"/>
         <Item title="test 2"/>
+        <Item title="test 2"/>
+        <Item title="test 2"/>
+        <Item title="test 2"/>
+        <Item title="test 2"/>
+        </div>
       </main>
     </>
   );

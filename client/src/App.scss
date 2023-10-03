@@ -3,3 +3,12 @@
 body {
   padding-top: 5rem;
 }
+
+.carousel-caption {
+  top: 35%;
+}
+
+.carousel-item img:hover {
+  transition: 0.3s;
+  filter: blur(0.5rem);
+}
