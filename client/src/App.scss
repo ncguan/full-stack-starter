@@ -32,3 +32,26 @@ body {
   background: radial-gradient(#9a9347 30%, #8D8741 70%);
   color: #FBEEC1;
 }
+
+
+// Detail component
+.custom-card {
+  background-color: #DAAD86;
+}
+.accordion-button:focus {
+  box-shadow: none;
+}
+
+.accordion-button {
+  background-color: #8D8741;
+  color: #FBEEC1;
+}
+
+.accordion-button:not(.collapsed) {
+  background-color: #FBEEC1;
+  color: #8D8741;
+}
+
+.accordion-item {
+  background-image: linear-gradient(#FBEEC1, #BC986A);
+}

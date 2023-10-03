@@ -9,7 +9,7 @@ function Detail() {
                 <title>Rescue Name - {staticContext?.env?.VITE_SITE_TITLE ?? ''}</title>
             </Helmet>
             <main className="container">
-                <div className="row border rounded">
+                <div className="row border rounded shadow custom-card">
                     <div className="col-12 col-md-6 p-3">
                         <img className="d-block w-100" src="https://imgs.search.brave.com/Mdu0eNUo8V0LDBDTOjKyCClbIfpBy66myk2kQF9cC8Y/rs:fit:860:0:0/g:ce/aHR0cHM6Ly9kZXNp/Z25zaGFjay5uZXQv/d3AtY29udGVudC91/cGxvYWRzL3BsYWNl/a2l0dGVuLmpwZw" alt="First slide" />
                     </div>
@@ -22,7 +22,7 @@ function Detail() {
                     </div>
                 </div>
             </main>
-            <div class="accordion mt-4 ms-5 me-5" id="accordionPanelsStayOpenExample">
+            <div class="accordion shadow mt-4 mb-4 ms-5 me-5" id="accordionPanelsStayOpenExample">
                 <div class="accordion-item">
                     <h2 class="accordion-header" id="panelsStayOpen-headingOne">
                         <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="true" aria-controls="panelsStayOpen-collapseOne">
