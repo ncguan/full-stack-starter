@@ -4,6 +4,16 @@ body {
   padding-top: 5rem;
 }
 
+img {
+  max-height: 100%;  
+  max-width: 100%; 
+}
+
+.carousel-inner, .carousel-item{
+  width: 20ren;
+  height: 20rem;
+}
+
 .carousel-caption {
   top: 35%;
 }
@@ -33,11 +43,15 @@ body {
   color: #FBEEC1;
 }
 
-
 // Detail component
 .custom-card {
   background-color: #DAAD86;
 }
+
+.img-container {
+  height: 35rem;
+}
+
 .accordion-button:focus {
   box-shadow: none;
 }

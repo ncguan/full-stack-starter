@@ -29,7 +29,7 @@ function Detail() {
             </Helmet>
             <main className="container">
                 <div className="row border rounded shadow custom-card">
-                    <div className="col-12 col-md-6 p-3">
+                    <div className="img-container col-12 col-md-6 p-3 d-flex flex-wrap align-items-center justify-content-center">
                         <img className="d-block w-100" src={`${data?.Logo[0].url}`} alt="First slide" />
                     </div>
                     <div className="col-12 col-md-6 p-3 align-self-center">
