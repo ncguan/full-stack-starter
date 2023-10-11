@@ -34,9 +34,9 @@ function Detail() {
                     </div>
                     <div className="col-12 col-md-6 p-3 align-self-center">
                         <h2>{data?.Name}</h2>
-                        <p>{data?.Address == 'N/A' ? "" : data?.Address}</p>
-                        <p>{data?.Email == 'N/A' ? "" : data?.Email}</p>
-                        <p>{data?.Phone == 'N/A' ? "" : data?.Phone}</p>
+                        {data?.Address == 'N/A' ? "" : <p>{data?.Address}</p>}
+                        {data?.Email == 'N/A' ? "" : <p>{data?.Email}</p>}
+                        {data?.Phone == 'N/A' ? "" : <p>{data?.Phone}</p>}
                         <p>{data?.Website}</p>
                     </div>
                 </div>
