@@ -1,0 +1,47 @@
+[
+    {
+        "model": "Rescue",
+        "data": {
+            "id": 1000,
+            "Name": "Fixture Rescue 1000",
+            "Address": "123 address1000",
+            "Website": "https://www.rescue1000.com",
+            "Email": "rescue1000@email.com",
+            "Phone": "(000)000-0000",
+            "Services": "service1000, service 2000, service3000",
+            "Fee": "Animal1: $100, Animal2: $100",
+            "Logo": "https://image1000.com",
+            "Animals": "animal1000, animal2000"
+        }
+    },
+    {
+        "model": "Rescue",
+        "data": {
+            "id": 1001,
+            "Name": "Fixture Rescue 1001",
+            "Address": "123 address1001",
+            "Website": "https://www.rescue1001.com",
+            "Email": "rescue1001@email.com",
+            "Phone": "(111)111-1111",
+            "Services": "service1001, service 2001, service3001",
+            "Fee": "Animal1: $50, Animal2: $75",
+            "Logo": "https://image1001.com",
+            "Animals": "animal1001, animal2001"
+        }
+    },
+    {
+        "model": "Rescue",
+        "data": {
+            "id": 1002,
+            "Name": "Fixture Rescue 1002",
+            "Address": "123 address1002",
+            "Website": "https://www.rescue1002.com",
+            "Email": "rescue1002@email.com",
+            "Phone": "(222)222-2222",
+            "Services": "service1002, service 2002, service3002",
+            "Fee": "Animal1: $50, Animal2: $100",
+            "Logo": "https://image1002.com",
+            "Animals": "animal1002, animal2002"
+        }
+    }
+]
