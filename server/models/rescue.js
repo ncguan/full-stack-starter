@@ -20,6 +20,12 @@ export default function (sequelize, DataTypes) {
     Services: DataTypes.STRING,
     Fee: DataTypes.STRING,
     Logo: DataTypes.STRING,
+    LogoUrl: {
+      type: DataTypes.VIRTUAL,
+      get() {
+        return this.assetUrl('Logo');
+      }
+    },
     Animals: DataTypes.STRING
   }, {
     sequelize,
@@ -27,8 +33,8 @@ export default function (sequelize, DataTypes) {
   });
 
   Rescue.afterSave(async (record, options) => {
-    record.handleAssetFile('Attachments', options);
-  })
+    record.handleAssetFile('Logo', options);
+  });
 
   return Rescue;
 };

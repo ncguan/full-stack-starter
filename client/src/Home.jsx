@@ -25,7 +25,7 @@ function Home() {
       <main className="container">
         <h1 className="text-center">San Francisco Animal Rescues and Shelters</h1>
         <div className="row">
-          {data?.map((record) => <Item key={record.id} id={record.id} rescueName={record.Name} rescueLogo={record.Logo}></Item>)}
+          {data?.map((record) => <Item key={record.id} id={record.id} rescueName={record.Name} rescueLogo={record.LogoUrl}></Item>)}
         </div>
       </main>
     </>
