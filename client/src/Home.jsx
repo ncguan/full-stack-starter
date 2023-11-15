@@ -8,11 +8,7 @@ function Home() {
   const [data, setData] = useState();
 
   useEffect(() => {
-    const token = 'patTCpkEfmeKpfapg.c4f05db316ffb810afa03cfba835c4c3256ebadc61c9b15316b83e396ee450f1';
-    const url = 'https://api.airtable.com/v0/app0igU6SyNXNYHh6/rescues';
-    fetch(url, {
-      headers: { Authorization: `Bearer ${token}` }
-    })
+    fetch('/api/rescues')
       .then((response) => response.json())
       .then((data) => {
         console.log(data)
@@ -29,7 +25,7 @@ function Home() {
       <main className="container">
         <h1 className="text-center">San Francisco Animal Rescues and Shelters</h1>
         <div className="row">
-          {data?.records.map((record) => <Item key={record.id} id={record.id} rescueName={record.fields.Name} rescueLogo={record.fields.Logo[0].url}></Item>)}
+          {data?.map((record) => <Item key={record.id} id={record.id} rescueName={record.Name} rescueLogo={record.Logo}></Item>)}
         </div>
       </main>
     </>

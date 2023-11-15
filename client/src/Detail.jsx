@@ -10,15 +10,11 @@ function Detail() {
     const [data, setData] = useState();
 
     useEffect(() => {
-        const token = 'patTCpkEfmeKpfapg.c4f05db316ffb810afa03cfba835c4c3256ebadc61c9b15316b83e396ee450f1';
-        const url = `https://api.airtable.com/v0/app0igU6SyNXNYHh6/rescues/${id}`;
-        fetch(url, {
-            headers: { Authorization: `Bearer ${token}` }
-        })
+        fetch(`/api/rescues/${id}`)
             .then((response) => response.json())
             .then((data) => {
-                console.log(data.fields)
-                setData(data.fields)
+                console.log(data)
+                setData(data)
             });
     }, [id]);
 
