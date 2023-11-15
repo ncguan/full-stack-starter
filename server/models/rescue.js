@@ -25,5 +25,10 @@ export default function (sequelize, DataTypes) {
     sequelize,
     modelName: 'Rescue',
   });
+
+  Rescue.afterSave(async (record, options) => {
+    record.handleAssetFile('Attachments', options);
+  })
+
   return Rescue;
 };

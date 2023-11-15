@@ -13,4 +13,13 @@ router.get('/', async (req, res) => {
     res.json(records.map((record) => record.toJSON()))
 })
 
+router.get('/:id', async (req, res) => {
+    try {
+        const record = await models.Rescue.findByPk(req.params.id);
+        res.json(record.toJSON());
+    } catch (err) {
+        console.log(err);
+    }
+})
+
 export default router;
