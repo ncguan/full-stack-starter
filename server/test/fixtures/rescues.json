@@ -10,7 +10,6 @@
             "Phone": "(000)000-0000",
             "Services": "service1000, service 2000, service3000",
             "Fee": "Animal1: $100, Animal2: $100",
-            "Logo": "https://image1000.com",
             "Animals": "animal1000, animal2000"
         }
     },
@@ -25,7 +24,6 @@
             "Phone": "(111)111-1111",
             "Services": "service1001, service 2001, service3001",
             "Fee": "Animal1: $50, Animal2: $75",
-            "Logo": "https://image1001.com",
             "Animals": "animal1001, animal2001"
         }
     },
@@ -40,7 +38,6 @@
             "Phone": "(222)222-2222",
             "Services": "service1002, service 2002, service3002",
             "Fee": "Animal1: $50, Animal2: $100",
-            "Logo": "https://image1002.com",
             "Animals": "animal1002, animal2002"
         }
     }
