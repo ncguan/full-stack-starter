@@ -14,6 +14,7 @@ import PasswordsRoutes from './Passwords/PasswordsRoutes';
 import Register from './Register';
 import UsersRoutes from './Users/UsersRoutes';
 import Detail from './Detail';
+import RescueForm from './RescueForm';
 
 function App() {
   const staticContext = useStaticContext();
@@ -28,6 +29,8 @@ function App() {
             <AppRedirects>
               <Routes>
                 <Route path="/" element={<Home />} />
+                <Route path="/rescues/new" element={<RescueForm/>}/>
+                <Route path="/rescues/:id/edit" element={<RescueForm/>}/>
                 <Route path="/detail/:id" element={<Detail />} />
                 <Route path="/login" element={<Login />} />
                 <Route path="/passwords/*" element={<PasswordsRoutes />} />
